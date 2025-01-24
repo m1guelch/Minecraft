@@ -1,0 +1,14 @@
+services:
+  minecraft-server:
+    image: itzg/minecraft-server
+    container_name: minecraft-server
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"  # Acepta el EULA de Minecraft
+      MEMORY: "2G"  # Asigna memoria al servidor
+    volumes:
+      - ./data:/data  # Monta el volumen para persistir datos
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
