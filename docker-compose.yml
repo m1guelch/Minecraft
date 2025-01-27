@@ -5,10 +5,10 @@ services:
     ports:
       - "25565:25565"
     environment:
-      EULA: "TRUE"  # Acepta el EULA de Minecraft
-      MEMORY: "2G"  # Asigna memoria al servidor
+      EULA: "TRUE"  # Accepts EULA Minecraft
+      MEMORY: "2G"  # RAM
     volumes:
-      - ./data:/data  # Monta el volumen para persistir datos
+      - ./data:/data
     stdin_open: true
     tty: true
     restart: unless-stopped

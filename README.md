@@ -1,2 +1,2 @@
 # Minecraft
-Servidor de Minecraft en Docker compose
+Deploys a Minecraft Server using Docker compose
